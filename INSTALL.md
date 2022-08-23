@@ -166,7 +166,7 @@ Cependant, cette dernière s'appuie sur l'outil en ligne de commande `git` que n
     - "Choosing HTTPS transport backend", déjà sélectionné "Use the OpenSSL library" ("Next")
     - "Configuring the line ending conversions", déjà sélectionné "Checkout Windows-style, commit Unix-style line endings" ("Next")
     - "Configuring the terminal emulator to use with Git Bash", déjà sélectionné "Use MinTTY (the default terminal of MSYS2)" ("Next")
-    - "Choose the default behavior of 'git pull'", déjà sélectionné "Default (fast-forward or merge)" ("Next")
+    - "Choose the default behavior of 'git pull'", "Default (fast-forward or merge)" ("Next")
     - "Choose a credentiel helper", **choisir "None"**("Next")
     - "Configuring extra options", "Enable file system caching" (déjà sélectionné) et "Enable symbolic links" ("Next")
     - "Configuring experimental options", rien n'est sélectionné ("Install")
@@ -216,8 +216,8 @@ Cela nous permettra également d'en finaliser l'installation en ajoutant les ext
 ### Création d'une copie locale du projet
 1. Lancer VSCode
 1. Cliquer sur l'icone en forme de graphe à 3 noeuds à gauche de l'écran (*Source Control* ou *Ctrl+Shift+G*)
-1. Cliquer sur le bouton "Clone Repository" à gauche de l'écran ou *Ctrl+Shift+P* puis sélectionner "Clone from Github"
-1. Cliquez sur "Allow" dans la boite de dialogue puis accepter les différents choix proposés dans le navigateur ou dans une boite de dialogue VSCode (le navigateur doit être celui où le fork a été fait dans votre espace personnel github)
+1. Sélectionner "Clone from Github"
+1. Cliquez sur "Allow" dans la boite de dialogue puis accepter les différents choix proposés dans le navigateur ou dans une boite de dialogue VSCode (le navigateur doit être celui où le fork a été fait dans votre espace personnel github). 
 1. Sélectionner le dépôt "uvsqXXXXXXXX/l1-python" dans la liste déroulante puis choisissez l'emplacement local du projet
 1. Ouvrir ensuite le répertoire créé ci-dessus
 
@@ -250,6 +250,12 @@ Pour isoler l'environnement du projet d'éventuelles autres versions de Python o
         "terminal.integrated.defaultProfile.windows": "Command Prompt"
     }
     ```
+
+    Ce qui revient à taper:
+    ```
+    [« /k », « C:\\users\\moi\\miniconda3\\Scripts\\activate.bat C: C:\\users\\moi\\miniconda3] 
+    ```
+    dans le « args » du bloc « Command Prompt »
     Si le répertoire par défaut pour installer miniconda n'a pas été choisi, adapter le chemin d'installation.
     Enfin, utiliser *File/Save* ou Ctrl+S pour sauvegarder vos modifications puis fermer l'onglet settings.json.
 1. Sous Windows, Mac et Linux s'assurer que le répertoire du projet est ouvert dans VSCode puis ouvrir un terminal (menu Terminal/New Terminal ou View/Terminal).
